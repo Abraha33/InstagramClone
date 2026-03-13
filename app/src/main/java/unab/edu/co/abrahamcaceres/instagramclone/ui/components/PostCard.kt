@@ -6,8 +6,6 @@ import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Favorite
 import androidx.compose.material.icons.filled.MoreVert
-import androidx.compose.material.icons.outlined.BookmarkBorder
-import androidx.compose.material.icons.outlined.ChatBubbleOutline
 import androidx.compose.material.icons.outlined.FavoriteBorder
 import androidx.compose.material.icons.outlined.Send
 import androidx.compose.material3.*
@@ -125,14 +123,14 @@ private fun PostActions(
             )
         }
         IconButton(onClick = {}) {
-            Icon(Icons.Outlined.ChatBubbleOutline, "Comentar")
+            Icon(Icons.Outlined.FavoriteBorder, "Comentar")
         }
         IconButton(onClick = {}) {
             Icon(Icons.Outlined.Send, "Enviar")
         }
         Spacer(Modifier.weight(1f))
         IconButton(onClick = {}) {
-            Icon(Icons.Outlined.BookmarkBorder, "Guardar")
+            Icon(Icons.Outlined.FavoriteBorder, "Guardar")
         }
     }
 }
